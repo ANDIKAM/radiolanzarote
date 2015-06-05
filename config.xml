@@ -1,14 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" id="com.andikam.RadioLanzarote" version="1.0.0">
-    <name>RadioLanzarote</name>
+    <name>Radio Lanzarote</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        Aplicación de Radio Lanzarote - El latido de tu isla
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="contacto@andikam.com" href="http://www.andikam.com">
+        ANDIKAM SAS Colombia
     </author>
     <content src="index.html"/>
     <plugin name="cordova-plugin-whitelist" version="1"/>
+    <plugin name="org.apache.cordova.splashscreen"/>
+    <platform name="android">
+              <icon src="res/icon/android/icon-36-ldpi.png" density="ldpi" />
+              <icon src="res/icon/android/icon-48-mdpi.png" density="mdpi" />
+              <icon src="res/icon/android/icon-72-hdpi.png" density="hdpi" />
+              <icon src="res/icon/android/icon-96-xhdpi.png" density="xhdpi" />
+              <icon src="res/icon/android/icon-144-xxhdpi.png" density="xhdpi" />
+              
+              <splash src="res/screen/android/splash-land-hdpi.png" density="land-hdpi"/>
+              <splash src="res/screen/android/splash-land-ldpi.png" density="land-ldpi"/>
+              <splash src="res/screen/android/splash-land-mdpi.png" density="land-mdpi"/>
+              <splash src="res/screen/android/splash-land-xhdpi.png" density="land-xhdpi"/>
+              <splash src="res/screen/android/splash-land-xxhdpi.png" density="land-xxhdpi"/>
+
+              <splash src="res/screen/android/splash-port-hdpi.png" density="port-hdpi"/>
+              <splash src="res/screen/android/splash-port-ldpi.png" density="port-ldpi"/>
+              <splash src="res/screen/android/splash-port-mdpi.png" density="port-mdpi"/>
+              <splash src="res/screen/android/splash-port-xhdpi.png" density="port-xhdpi"/>
+              <splash src="res/screen/android/splash-port-xxhdpi.png" density="port-xxhdpi"/>
+     </platform>
     <access origin="*"/>
     <allow-intent href="http://*/*"/>
     <allow-intent href="https://*/*"/>
