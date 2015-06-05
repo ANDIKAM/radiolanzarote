@@ -1,25 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.andikam.RadioLanzarote" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <preference name="loglevel" value="DEBUG" />
-    <feature name="SplashScreen">
-        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
-        <param name="onload" value="true" />
-    </feature>
-    <feature name="NetworkStatus">
-        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
-    </feature>
-    <feature name="File">
-        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
-        <param name="onload" value="true" />
-    </feature>
-    <feature name="Media">
-        <param name="android-package" value="org.apache.cordova.media.AudioHandler" />
-    </feature>
     <icon density="ldpi" src="res/icon/android/icon-36-ldpi.png" />
     <icon density="mdpi" src="res/icon/android/icon-48-mdpi.png" />
     <icon density="hdpi" src="res/icon/android/icon-72-hdpi.png" />
     <icon density="xhdpi" src="res/icon/android/icon-96-xhdpi.png" />
-    <icon density="xhdpi" src="res/icon/android/icon-144-xxhdpi.png" />
+    <icon density="xxhdpi" src="res/icon/android/icon-144-xxhdpi.png" />
     <splash density="land-hdpi" src="res/screen/android/splash-land-hdpi.png" />
     <splash density="land-ldpi" src="res/screen/android/splash-land-ldpi.png" />
     <splash density="land-mdpi" src="res/screen/android/splash-land-mdpi.png" />
@@ -46,6 +32,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <allow-navigation href="http://karinadelgadophotography.test.vpsandikam.com/*" />
     <feature name="Whitelist">
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />

@@ -15,7 +15,7 @@
               <icon src="res/icon/android/icon-48-mdpi.png" density="mdpi" />
               <icon src="res/icon/android/icon-72-hdpi.png" density="hdpi" />
               <icon src="res/icon/android/icon-96-xhdpi.png" density="xhdpi" />
-              <icon src="res/icon/android/icon-144-xxhdpi.png" density="xhdpi" />
+              <icon src="res/icon/android/icon-144-xxhdpi.png" density="xxhdpi" />
               
               <splash src="res/screen/android/splash-land-hdpi.png" density="land-hdpi"/>
               <splash src="res/screen/android/splash-land-ldpi.png" density="land-ldpi"/>
@@ -36,6 +36,7 @@
     <allow-intent href="sms:*"/>
     <allow-intent href="mailto:*"/>
     <allow-intent href="geo:*"/>
+    <allow-navigation href="http://karinadelgadophotography.test.vpsandikam.com/*" />
     <platform name="android">
         <allow-intent href="market:*"/>
     </platform>

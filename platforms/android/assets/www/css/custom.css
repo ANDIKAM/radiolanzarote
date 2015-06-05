@@ -23,6 +23,26 @@
     float:left;
 }
 @media (max-width: 479px) and (orientation:portrait) {
+    .publicidad{
+        width: 100%;
+        padding-bottom: 20%;
+        background-color: rgba(0,0,0,.2);
+        position: fixed;
+        margin: auto;
+        bottom: 0;
+        text-align: center;
+        -webkit-border-top-left-radius: 5px;
+        -webkit-border-top-right-radius: 5px;
+        transition: background .5s linear;
+        background-repeat: no-repeat;
+        background-size: auto 100% !important;
+        background-attachment: fixed;
+        background-position: center; 
+        -webkit-perspective: 1000;
+        -webkit-backface-visibility: hidden;
+        -webkit-transform-style: preserve-3d;
+        z-index:9999;
+    }
     .info{
         width: 70%;
         background-color: rgba(0,0,0,.5);
@@ -72,14 +92,694 @@
         font-size: 14px !important;
         line-height: 14px !important;
         float:left;
-    }
-    .cabecera:after{
-        content:"(max-width: 479px) and (orientation:portrait)";
+        clear: both;
     }
     div.player{
         width: 70% !important;
         height: 0 !important;
         padding-bottom: 70% !important;
+        margin-left: auto;
+        margin-right: auto;
+        clear:both;
+    }
+    div.news{
+        width: 80% !important;
+        height: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        text-transform: none !important;
+        clear:both;
+        margin-top:10px;
+    }
+    div.player.jp-play{
+        background-image: url(../img/player-play.png);
+        margin-top:20px;
+        margin-left:auto;
+        background-size: 100% 100%;
+        margin-right: auto;
+        clear: both;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    div.player.jp-pause{
+        background-image: url(../img/player-pause.png);
+        margin-left:auto;
+        margin-top:20px;
+        background-size: 100% 100%;
+        margin-right: auto;
+        clear: both;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+} 
+@media (max-width: 479px) and (orientation:landscape) {
+    .publicidad{
+        width: 100%;
+        padding-bottom: 13%;
+        height: 0px;
+        background-color: rgba(0,0,0,.2);
+        position: fixed;
+        margin: auto;
+        bottom: 0;
+        text-align: center;
+        -webkit-border-top-left-radius: 5px;
+        -webkit-border-top-right-radius: 5px;
+        transition: background .5s linear;
+        background-repeat: no-repeat;
+        background-size: auto 100% !important;
+        background-attachment: fixed;
+        background-position: center; 
+        -webkit-perspective: 1000;
+        -webkit-backface-visibility: hidden;
+        -webkit-transform-style: preserve-3d;
+        z-index:9999;
+    }
+    .info{
+        width: 70%;
+        background-color: rgba(0,0,0,.5);
+        text-transform: none !important;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        border-radius: 5px;
+        clear: both;
+        height: 50px;
+        line-height: 50px;
+        z-index:9999;
+    }
+    .cabecera{
+        height: 45px;
+        background-color: #00798A;
+        width: 100%;
+    }
+    .titulo{
+        width: 75%;
+        margin-top:3px;
+        margin-left:5px;
+    }
+    .cabecera .logo {
+        height:31px;
+        width: auto;
+        margin-left: 6px;
+        margin-top: 6px;
+        float:left;
+    }
+    div.principal{
+        font-size: 16px !important;
+        font-weight: 900 !important;
+        float:left;
+    }
+    div.secundario{
+        font-size: 10px !important;
+        clear:right;
+        float:left;
+        margin-top:6px;
+    }
+    div.terceario{
+        font-size: 11px !important;
+        line-height: 11px !important;
+        float:left;
+        clear: both;
+    }
+    div.player{
+        width: 40% !important;
+        height: 0 !important;
+        padding-bottom: 40% !important;
+        float:left;
+        margin-left: 4%;
+    }
+    div.news{
+        width: 55% !important;
+        height: 80% !important;
+        margin-left: 4%;
+        float:left;
+        margin-left: 4%;
+        clear: right;
+        margin-top:20px;
+        text-transform: none !important;
+    }
+    div.player.jp-play{
+        background-image: url(../img/player-play.png);
+        margin-top:20px;
+        margin-left:auto;
+        background-size: 100% 100%;
+        margin-right: auto;
+        clear: both;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    div.player.jp-pause{
+        background-image: url(../img/player-pause.png);
+        margin-left:auto;
+        margin-top:20px;
+        background-size: 100% 100%;
+        margin-right: auto;
+        clear: both;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+} 
+@media (min-width: 480px) and (max-width: 767px) and (orientation:portrait)  {
+    .publicidad{
+        width: 100%;
+        padding-bottom: 10%;
+        background-image: url('http://karinadelgadophotography.test.vpsandikam.com/Slider-01.png');
+        background-color: rgba(0,0,0,.2);
+        position: fixed;
+        margin: auto;
+        bottom: 0;
+        text-align: center;
+        -webkit-border-top-left-radius: 5px;
+        -webkit-border-top-right-radius: 5px;
+        transition: background .5s linear;
+        background-repeat: no-repeat;
+        background-size: auto 100% !important;
+        background-attachment: fixed;
+        background-position: center; 
+        -webkit-perspective: 1000;
+        -webkit-backface-visibility: hidden;
+        -webkit-transform-style: preserve-3d;
+        z-index:9999;
+    }
+    .info{
+        width: 70%;
+        background-color: rgba(0,0,0,.5);
+        text-transform: none !important;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        border-radius: 5px;
+        clear: both;
+        height: 50px;
+        line-height: 50px;
+        z-index:9999;
+    }
+    .cabecera{
+        height: 75px;
+        background-color: #00798A;
+        width: 100%;
+    }
+    .titulo{
+        width: 75%;
+        margin-top:7px;
+        margin-left:5px;
+    }
+    .cabecera .logo {
+        height:59px;
+        width: auto;
+        margin-left: 8px;
+        margin-top:8px;
+        float:left;
+    }
+    div.principal{
+        font-size: 30px !important;
+        font-weight: 900 !important;
+        float:left;
+    }
+    div.secundario{
+        font-size: 15px !important;
+        clear:right;
+        float:left;
+        margin-top: 16px;
+        font-weight: 600;
+}
+    div.terceario{
+        font-size: 14px !important;
+        line-height: 14px !important;
+        float:left;
+        clear: both;
+        font-weight: 500;
+}
+    div.player{
+        width: 45% !important;
+        height: 0 !important;
+        padding-bottom: 45% !important;
+        margin-left: auto;
+        margin-right: auto;
+        clear:both;
+    }
+    div.news{
+        width: 80% !important;
+        height: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        clear:both;
+        margin-top: 20px;
+        text-transform: none !important;
+}
+    div.player.jp-play{
+        background-image: url(../img/player-play.png);
+        margin-top:20px;
+        margin-left:auto;
+        background-size: 100% 100%;
+        margin-right: auto;
+        clear: both;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    div.player.jp-pause{
+        background-image: url(../img/player-pause.png);
+        margin-left:auto;
+        margin-top:20px;
+        background-size: 100% 100%;
+        margin-right: auto;
+        clear: both;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+} 
+@media (min-width: 480px) and (max-width: 767px) and (orientation:landscape)  {
+    .publicidad{
+        width: 100%;
+        padding-bottom: 9%;
+        height: 0px;
+        background-color: rgba(0,0,0,.2);
+        position: fixed;
+        margin: auto;
+        bottom: 0;
+        text-align: center;
+        -webkit-border-top-left-radius: 5px;
+        -webkit-border-top-right-radius: 5px;
+        transition: background .5s linear;
+        background-repeat: no-repeat;
+        background-size: auto 100% !important;
+        background-attachment: fixed;
+        background-position: center; 
+        -webkit-perspective: 1000;
+        -webkit-backface-visibility: hidden;
+        -webkit-transform-style: preserve-3d;
+        z-index:9999;
+    }
+    .info{
+        width: 70%;
+        background-color: rgba(0,0,0,.5);
+        text-transform: none !important;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        border-radius: 5px;
+        clear: both;
+        height: 50px;
+        line-height: 50px;
+        z-index:9999;
+    }
+    .cabecera{
+        height: 45px;
+        background-color: #00798A;
+        width: 100%;
+    }
+    .titulo{
+        width: 75%;
+        margin-top:3px;
+        margin-left:5px;
+    }
+    .cabecera .logo {
+        height:31px;
+        width: auto;
+        margin-left: 6px;
+        margin-top: 6px;
+        float:left;
+    }
+    div.principal{
+        font-size: 16px !important;
+        font-weight: 900 !important;
+        float:left;
+    }
+    div.secundario{
+        font-size: 10px !important;
+        clear:right;
+        float:left;
+        margin-top:6px;
+    }
+    div.terceario{
+        font-size: 11px !important;
+        line-height: 11px !important;
+        float:left;
+        clear: both;
+    }
+    div.player{
+        width: 35% !important;
+        height: 0 !important;
+        padding-bottom: 35% !important;
+        float:left;
+        margin-left: 4%;
+    }
+    div.news{
+        width: 60% !important;
+        height: 100% !important;
+        margin-left: 4%;
+        float:left;
+        margin-left: 4%;
+        clear: right;
+        margin-top:15px;
+        text-transform: none !important;
+    }
+    div.player.jp-play{
+        background-image: url(../img/player-play.png);
+        margin-top:15px;
+        margin-left:auto;
+        background-size: 100% 100%;
+        margin-right: auto;
+        clear: both;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    div.player.jp-pause{
+        background-image: url(../img/player-pause.png);
+        margin-left:auto;
+        margin-top:15px;
+        background-size: 100% 100%;
+        margin-right: auto;
+        clear: both;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+} 
+@media (min-width: 768px) and (max-width: 991px) and (orientation:portrait)  {
+    .publicidad{
+        width: 100%;
+        padding-bottom: 10%;
+        background-color: rgba(0,0,0,.2);
+        position: fixed;
+        margin: auto;
+        bottom: 0;
+        text-align: center;
+        -webkit-border-top-left-radius: 5px;
+        -webkit-border-top-right-radius: 5px;
+        transition: background .5s linear;
+        background-repeat: no-repeat;
+        background-size: auto 100% !important;
+        background-attachment: fixed;
+        background-position: center; 
+        -webkit-perspective: 1000;
+        -webkit-backface-visibility: hidden;
+        -webkit-transform-style: preserve-3d;
+        z-index:9999;
+    }
+    .info{
+        width: 70%;
+        background-color: rgba(0,0,0,.5);
+        text-transform: none !important;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        border-radius: 5px;
+        clear: both;
+        height: 50px;
+        line-height: 50px;
+        z-index:9999;
+    }
+.cabecera{
+        height: 70px;
+        background-color: #00798A;
+        width: 100%;
+    }
+    .titulo{
+        width: 75%;
+        margin-top: 7px;
+        margin-left:5px;
+    }
+    .cabecera .logo {
+        height: 54px;
+        width: auto;
+        margin-left: 8px;
+        margin-top: 8px;
+        float:left;
+    }
+    div.principal{
+        font-size: 25px !important;
+        font-weight: 900 !important;
+        float:left;
+    }
+    div.secundario{
+        font-size: 13px !important;
+        clear:right;
+        float:left;
+        font-weight: 600;
+        margin-top: 12px;
+    }
+    div.terceario{
+        font-size: 15px !important;
+        line-height: 15px !important;
+        float:left;
+        clear: both;
+    }
+       div.player{
+        width: 45% !important;
+        height: 0 !important;
+        padding-bottom: 45% !important;
+        margin-left: auto;
+        margin-right: auto;
+        clear:both;
+    }
+    div.news{
+        width: 80% !important;
+        height: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        clear:both;
+        margin-top: 20px;
+        text-transform: none !important;
+    }
+    
+    div.player.jp-play{
+        background-image: url(../img/player-play.png);
+        margin-top:20px;
+        margin-left:auto;
+        background-size: 100% 100%;
+        margin-right: auto;
+        clear: both;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    div.player.jp-pause{
+        background-image: url(../img/player-pause.png);
+        margin-left:auto;
+        margin-top:20px;
+        background-size: 100% 100%;
+        margin-right: auto;
+        clear: both;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+} 
+@media (min-width: 768px) and (max-width: 991px) and (orientation:landscape)  {
+    .publicidad{
+        width: 100%;
+        padding-bottom: 10%;
+        height: 0px;
+        background-color: rgba(0,0,0,.2);
+        position: fixed;
+        margin: auto;
+        bottom: 0;
+        text-align: center;
+        -webkit-border-top-left-radius: 5px;
+        -webkit-border-top-right-radius: 5px;
+        transition: background .5s linear;
+        background-repeat: no-repeat;
+        background-size: auto 100% !important;
+        background-attachment: fixed;
+        background-position: center; 
+        -webkit-perspective: 1000;
+        -webkit-backface-visibility: hidden;
+        -webkit-transform-style: preserve-3d;
+        z-index:9999;
+    }
+    .info{
+        width: 70%;
+        background-color: rgba(0,0,0,.5);
+        text-transform: none !important;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        border-radius: 5px;
+        clear: both;
+        height: 50px;
+        line-height: 50px;
+        z-index:9999;
+    }
+    .cabecera{
+        height: 70px;
+        background-color: #00798A;
+        width: 100%;
+    }
+    .titulo{
+        width: 75%;
+        margin-top: 7px;
+        margin-left:5px;
+    }
+    .cabecera .logo {
+        height: 54px;
+        width: auto;
+        margin-left: 8px;
+        margin-top: 8px;
+        float:left;
+    }
+    div.principal{
+        font-size: 25px !important;
+        font-weight: 900 !important;
+        float:left;
+    }
+    div.secundario{
+        font-size: 13px !important;
+        clear:right;
+        float:left;
+        font-weight: 600;
+        margin-top: 12px;
+    }
+    div.terceario{
+        font-size: 15px !important;
+        line-height: 15px !important;
+        float:left;
+        clear: both;
+    }
+    div.player{
+        width: 40% !important;
+        height: 0 !important;
+        padding-bottom: 40% !important;
+        float:left;
+        margin-left: 4%;
+    }
+    div.news{
+        width: 55% !important;
+        height: 90% !important;
+        margin-left: 4%;
+        float:left;
+        margin-left: 4%;
+        margin-top: 25px;
+        clear: right;
+        text-transform: none !important;
+}
+    div.player.jp-play{
+        background-image: url(../img/player-play.png);
+        margin-top: 25px;
+        margin-left:auto;
+        background-size: 100% 100%;
+        margin-right: auto;
+        clear: both;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    div.player.jp-pause{
+        background-image: url(../img/player-pause.png);
+        margin-left:auto;
+        margin-top:20px;
+        background-size: 100% 100%;
+        margin-right: auto;
+        clear: both;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+} 
+@media (min-width: 992px) and (orientation:portrait)  {
+    .publicidad{
+        width: 100%;
+        padding-bottom: 10%;
+        background-color: rgba(0,0,0,.2);
+        position: fixed;
+        margin: auto;
+        bottom: 0;
+        text-align: center;
+        -webkit-border-top-left-radius: 5px;
+        -webkit-border-top-right-radius: 5px;
+        transition: background .5s linear;
+        background-repeat: no-repeat;
+        background-size: auto 100% !important;
+        background-attachment: fixed;
+        background-position: center; 
+        -webkit-perspective: 1000;
+        -webkit-backface-visibility: hidden;
+        -webkit-transform-style: preserve-3d;
+        z-index:9999;
+    }
+    .info{
+        width: 70%;
+        background-color: rgba(0,0,0,.5);
+        text-transform: none !important;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        border-radius: 5px;
+        clear: both;
+        height: 50px;
+        line-height: 50px;
+        z-index:9999;
+    }
+.cabecera{
+        height: 70px;
+        background-color: #00798A;
+        width: 100%;
+    }
+    .titulo{
+        width: 75%;
+        margin-top: 7px;
+        margin-left:5px;
+    }
+    .cabecera .logo {
+        height: 54px;
+        width: auto;
+        margin-left: 8px;
+        margin-top: 8px;
+        float:left;
+    }
+    div.principal{
+        font-size: 25px !important;
+        font-weight: 900 !important;
+        float:left;
+    }
+    div.secundario{
+        font-size: 13px !important;
+        clear:right;
+        float:left;
+        font-weight: 600;
+        margin-top: 12px;
+    }
+    div.terceario{
+        font-size: 15px !important;
+        line-height: 15px !important;
+        float:left;
+        clear: both;
+    }
+       div.player{
+        width: 45% !important;
+        height: 0 !important;
+        padding-bottom: 45% !important;
+        margin-left: auto;
+        margin-right: auto;
+        clear:both;
+    }
+    div.news{
+        width: 80% !important;
+        height: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        clear:both;
+        margin-top: 20px;
+        text-transform: none !important;
     }
     div.player.jp-play{
         background-image: url(../img/player-play.png);
@@ -102,13 +802,37 @@
         background-position: center;
     }
 }
-@media (max-width: 479px) and (orientation:landscape) {
+@media (min-width: 992px) and (orientation:landscape)  {
+    .publicidad{
+        width: 100%;
+        padding-bottom: 7%;
+        height: 0px;
+        background-color: rgba(0,0,0,.2);
+        position: fixed;
+        margin: auto;
+        bottom: 0;
+        text-align: center;
+        -webkit-border-top-left-radius: 5px;
+        -webkit-border-top-right-radius: 5px;
+        transition: background .5s linear;
+        background-repeat: no-repeat;
+        background-size: auto 100% !important;
+        background-attachment: fixed;
+        background-position: center; 
+        -webkit-perspective: 1000;
+        -webkit-backface-visibility: hidden;
+        -webkit-transform-style: preserve-3d;
+        z-index:9999;
+    }
     .info{
         width: 70%;
         background-color: rgba(0,0,0,.5);
         text-transform: none !important;
         position: absolute;
         margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
         bottom: 0;
         text-align: center;
         border-radius: 5px;
@@ -118,21 +842,62 @@
         z-index:9999;
     }
     .cabecera{
-        height: 50px;
+        height: 70px;
         background-color: #00798A;
         width: 100%;
     }
-    .cabecera:after{
-        content:"(max-width: 479px) and (orientation:landscape)";
+    .titulo{
+        width: 75%;
+        margin-top: 3px;
+        margin-left:5px;
+    }
+    .cabecera .logo {
+        height: 54px;
+        width: auto;
+        margin-left: 8px;
+        margin-top: 8px;
+        float:left;
+    }
+    div.principal{
+        font-size: 30px !important;
+        font-weight: 900 !important;
+        float:left;
+    }
+    div.secundario{
+        font-size: 14px !important;
+        clear:right;
+        float:left;
+        margin-top: 17px;
+    
+        font-weight: 600;
+}
+    div.terceario{
+        font-size: 15px !important;
+        line-height: 11px !important;
+        float:left;
+        clear: both;
     }
     div.player{
-        width: 400px;
-        height: 400px;
-        transition: background .2s linear;
-        
+        width: 35% !important;
+        height: 0 !important;
+        padding-bottom: 35% !important;
+        float:left;
+        margin-left: 4%;
     }
-    div.player.player-play{
+    div.news{
+        width: 56% !important;
+        height: 90%;
+        margin-left: 4%;
+        float:left;
+        margin-left: 4%;
+        margin-top: 40px;
+        clear: right;
+    
+        text-transform: none !important;
+}
+    div.player.jp-play{
         background-image: url(../img/player-play.png);
+        margin-top: 40px;
         margin-left:auto;
         background-size: 100% 100%;
         margin-right: auto;
@@ -140,117 +905,14 @@
         background-repeat: no-repeat;
         background-position: center;
     }
-    div.player.player-pause{
+    div.player.jp-pause{
         background-image: url(../img/player-pause.png);
         margin-left:auto;
+        margin-top:20px;
         background-size: 100% 100%;
         margin-right: auto;
         clear: both;
         background-repeat: no-repeat;
         background-position: center;
     }
-}
-@media (min-width: 480px) and (max-width: 767px) and (orientation:portrait)  {
-    .cabecera{
-        height: 50px;
-        background-color: #00798A;
-        width: 100%;
-    }
-    .cabecera:after{
-        content:"(min-width: 480px) and (max-width: 767px) and (orientation:portrait)";
-    }
-    div.player{
-        width: 500px;
-        height: 500px;
-    }
-    div.player.player-play{
-        background-image: url(../img/player-play.png);
-        margin-left:auto;
-        background-size: 100% 100%;
-        margin-right: auto;
-        clear: both;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    div.player.player-pause{
-        background-image: url(../img/player-pause.png);
-        margin-left:auto;
-        background-size: 100% 100%;
-        margin-right: auto;
-        clear: both;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-}
-@media (min-width: 480px) and (max-width: 767px) and (orientation:landscape)  {
-    .cabecera{
-        height: 50px;
-        background-color: #00798A;
-        width: 100%;
-    }
-    .cabecera:after{
-        content:"(min-width: 480px) and (max-width: 767px) and (orientation:landscape)";
-    }
-}
-@media (min-width: 768px) and (max-width: 991px) and (orientation:portrait)  {
-    .cabecera{
-        height: 50px;
-        background-color: #00798A;
-        width: 100%;
-    }
-    .cabecera:after{
-        content:"(min-width: 768px) and (max-width: 991px) and (orientation:portrait) ";
-    }
-    
-}
-@media (min-width: 768px) and (max-width: 991px) and (orientation:landscape)  {
-    .cabecera{
-        height: 50px;
-        background-color: #00798A;
-        width: 100%;
-    }
-    .cabecera:after{
-        content:"(min-width: 768px) and (max-width: 991px) and (orientation:landscape)";
-    }
-}
-@media (min-width: 992px) and (max-width: 1199px) and (orientation:portrait)  {
-    .cabecera{
-        height: 80px;
-        background-color: #00798A;
-        width: 100%;
-    }
-    .cabecera:after{
-        content:"(min-width: 992px) and (max-width: 1199px) and (orientation:portrait)";
-    }
-}
-@media (min-width: 992px) and (max-width: 1199px) and (orientation:landscape)  {
-    .cabecera{
-        height: 80px;
-        background-color: #00798A;
-        width: 100%;
-    }
-    .cabecera:after{
-        content:"(min-width: 992px) and (max-width: 1199px) and (orientation:landscape)";
-    }
-}
-@media (min-width: 1200px) and (orientation:portrait) {
-    .cabecera{
-        height: 80px;
-        background-color: #00798A;
-        width: 100%;
-    }
-    .cabecera:after{
-        content:"(min-width: 1200px) and (orientation:portrait)";
-    }
-    
-}
-@media (min-width: 1200px) and (orientation:landscape) {
-    .cabecera{
-        height: 80px;
-        background-color: #00798A;
-        width: 100%;
-    }
-    .cabecera:after{
-        content:"(min-width: 1200px) and (orientation:landscape)";
-    }
-}
+} 

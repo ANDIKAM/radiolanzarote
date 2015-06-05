@@ -28,7 +28,7 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *;img-src 'self' http://karinadelgadophotography.test.vpsandikam.com ">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
@@ -40,6 +40,12 @@
         <title>Radio Lanzarote</title>
     </head>
     <body>
+        <div class="hidden">
+            <img src="img/player-pause.png"/>
+            <img src="img/player-play.png"/>
+            <img src="img/logo.png"/>
+        </div>
+        <div class="publicidad"></div>
         <div class="container-fluid fullaltura" style="height: 100%;">
             <div class="row fullaltura">
                 <div class="cabecera">
@@ -52,9 +58,10 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 fullaltura">
                     <div id="jquery_jplayer_1" class="player jp-play"></div>
                     <div class="info blanco">Almacenando en buffer...</div>
-                    <div class="news"></div>
+                    <div class="news">Zona reservada para noticias</div>
                 </div>
             </div>
+                
             
             <!--
             <h1>Apache Cordova</h1>

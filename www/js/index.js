@@ -16,6 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
 var app = {
     // Application Constructor
     initialize: function() {
@@ -47,7 +48,15 @@ var app = {
 };
 
 app.initialize();
-
+var publi=1;
+function cambiarPublicidad(){
+    publi++;
+    var file="http://karinadelgadophotography.test.vpsandikam.com/Slider-";
+    if(publi>6){publi=1;}
+    var number=publi<10?"0"+publi:publi;
+    number="url(\'"+file+number+".png\')";
+    jQuery(".publicidad").css("background-image",number);
+}
 $(document).ready(function() {
     jQuery(".info").hide();
     var stream = {
@@ -92,4 +101,5 @@ $(document).ready(function() {
                 my_jPlayer.jPlayer("setMedia", stream).jPlayer("play");
             }
         });
+        setInterval(function(){cambiarPublicidad();},10000);
     });
