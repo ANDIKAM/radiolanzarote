@@ -62,13 +62,9 @@ $(document).ready(function() {
                 //my_extraPlayInfo.text(parseInt(event.jPlayer.status.currentPercentAbsolute, 10) + "%");
         },
         play: function(event) {
-                //my_playState.text(opt_text_playing);
         },
-        waiting: function(event){
-            jQuery(".info").css("display","block");
-        },
-        playing: function (event){
-            jQuery(".info").css("display","none");
+        playing: function(event) {
+                jQuery(".info").fadeOut();
         },
         pause: function(event) {
                 my_jPlayer.jPlayer("clearMedia");
@@ -85,8 +81,10 @@ $(document).ready(function() {
             my_jPlayer.toggleClass("jp-play");
             my_jPlayer.toggleClass("jp-pause");
             if(my_jPlayer.hasClass("jp-play")){
+                jQuery(".info").fadeOut();
                 my_jPlayer.jPlayer("pause");
             }else{
+                jQuery(".info").fadeIn();
                 my_jPlayer.jPlayer("setMedia", stream).jPlayer("play");
             }
         });

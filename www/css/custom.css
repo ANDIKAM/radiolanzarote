@@ -7,6 +7,9 @@
 .negro{
     color:#383838 !important;
 }
+.fullaltura{
+    height: 90% !important;
+}
 
 @font-face {
   font-family: 'BookmanOldStyle';
@@ -20,6 +23,26 @@
     float:left;
 }
 @media (max-width: 479px) and (orientation:portrait) {
+    .publicidad{
+        width: 100%;
+        padding-bottom: 20%;
+        background-color: rgba(0,0,0,.2);
+        position: fixed;
+        margin: auto;
+        bottom: 0;
+        text-align: center;
+        -webkit-border-top-left-radius: 5px;
+        -webkit-border-top-right-radius: 5px;
+        transition: background .5s linear;
+        background-repeat: no-repeat;
+        background-size: auto 100% !important;
+        background-attachment: fixed;
+        background-position: center; 
+        -webkit-perspective: 1000;
+        -webkit-backface-visibility: hidden;
+        -webkit-transform-style: preserve-3d;
+        z-index:9999;
+    }
     .info{
         width: 70%;
         background-color: rgba(0,0,0,.5);
@@ -35,6 +58,7 @@
         clear: both;
         height: 50px;
         line-height: 50px;
+        z-index:9999;
     }
     .cabecera{
         height: 60px;
@@ -68,14 +92,22 @@
         font-size: 14px !important;
         line-height: 14px !important;
         float:left;
-    }
-    .cabecera:after{
-        content:"(max-width: 479px) and (orientation:portrait)";
+        clear: both;
     }
     div.player{
         width: 70% !important;
         height: 0 !important;
         padding-bottom: 70% !important;
+        margin-left: auto;
+        margin-right: auto;
+        clear:both;
+    }
+    div.news{
+        width: 80% !important;
+        height: 0 !important;
+        margin-left: auto;
+        margin-right: auto;
+        clear:both;
     }
     div.player.jp-play{
         background-image: url(../img/player-play.png);
@@ -99,20 +131,96 @@
     }
 }
 @media (max-width: 479px) and (orientation:landscape) {
-    .cabecera{
+    .publicidad{
+        width: 100%;
+        padding-bottom: 13%;
+        height: 0px;
+        background-color: rgba(0,0,0,.2);
+        position: fixed;
+        margin: auto;
+        bottom: 0;
+        text-align: center;
+        -webkit-border-top-left-radius: 5px;
+        -webkit-border-top-right-radius: 5px;
+        transition: background .5s linear;
+        background-repeat: no-repeat;
+        background-size: auto 100% !important;
+        background-attachment: fixed;
+        background-position: center; 
+        -webkit-perspective: 1000;
+        -webkit-backface-visibility: hidden;
+        -webkit-transform-style: preserve-3d;
+        z-index:9999;
+    }
+    .info{
+        width: 70%;
+        background-color: rgba(0,0,0,.5);
+        text-transform: none !important;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        border-radius: 5px;
+        clear: both;
         height: 50px;
+        line-height: 50px;
+        z-index:9999;
+    }
+    .cabecera{
+        height: 45px;
         background-color: #00798A;
         width: 100%;
     }
-    .cabecera:after{
-        content:"(max-width: 479px) and (orientation:landscape)";
+    .titulo{
+        width: 75%;
+        margin-top:3px;
+        margin-left:5px;
+    }
+    .cabecera .logo {
+        height:31px;
+        width: auto;
+        margin-left: 6px;
+        margin-top: 6px;
+        float:left;
+    }
+    div.principal{
+        font-size: 16px !important;
+        font-weight: 900 !important;
+        float:left;
+    }
+    div.secundario{
+        font-size: 10px !important;
+        clear:right;
+        float:left;
+        margin-top:6px;
+    }
+    div.terceario{
+        font-size: 11px !important;
+        line-height: 11px !important;
+        float:left;
+        clear: both;
     }
     div.player{
-        width: 400px;
-        height: 400px;
+        width: 40% !important;
+        height: 0 !important;
+        padding-bottom: 40% !important;
+        float:left;
+        margin-left: 4%;
     }
-    div.player.player-play{
+    div.news{
+        width: 40% !important;
+        height: 0 !important;
+        margin-left: 4%;
+        float:left;
+        margin-left: 4%;
+        clear: right;
+    }
+    div.player.jp-play{
         background-image: url(../img/player-play.png);
+        margin-top:20px;
         margin-left:auto;
         background-size: 100% 100%;
         margin-right: auto;
@@ -120,9 +228,10 @@
         background-repeat: no-repeat;
         background-position: center;
     }
-    div.player.player-pause{
+    div.player.jp-pause{
         background-image: url(../img/player-pause.png);
         margin-left:auto;
+        margin-top:20px;
         background-size: 100% 100%;
         margin-right: auto;
         clear: both;

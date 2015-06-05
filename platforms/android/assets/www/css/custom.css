@@ -7,18 +7,10 @@
 .negro{
     color:#383838 !important;
 }
-.info{
-    width: 70%;
-    background-color: rgba(0,0,0,.5);
-    text-transform: none !important;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    text-align: center;
+.fullaltura{
+    height: 90% !important;
 }
+
 @font-face {
   font-family: 'BookmanOldStyle';
   src: url('../fonts/BookmanOldStyle.eot?#iefix') format('embedded-opentype'),  url('../fonts/BookmanOldStyle.woff') format('woff'), url('../fonts/BookmanOldStyle.ttf')  format('truetype'), url('../fonts/BookmanOldStyle.svg#BookmanOldStyle') format('svg');
@@ -32,10 +24,21 @@
 }
 @media (max-width: 479px) and (orientation:portrait) {
     .info{
+        width: 70%;
+        background-color: rgba(0,0,0,.5);
+        text-transform: none !important;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
         border-radius: 5px;
         clear: both;
         height: 50px;
         line-height: 50px;
+        z-index:9999;
     }
     .cabecera{
         height: 60px;
@@ -100,6 +103,20 @@
     }
 }
 @media (max-width: 479px) and (orientation:landscape) {
+    .info{
+        width: 70%;
+        background-color: rgba(0,0,0,.5);
+        text-transform: none !important;
+        position: absolute;
+        margin: auto;
+        bottom: 0;
+        text-align: center;
+        border-radius: 5px;
+        clear: both;
+        height: 50px;
+        line-height: 50px;
+        z-index:9999;
+    }
     .cabecera{
         height: 50px;
         background-color: #00798A;
@@ -111,6 +128,8 @@
     div.player{
         width: 400px;
         height: 400px;
+        transition: background .2s linear;
+        
     }
     div.player.player-play{
         background-image: url(../img/player-play.png);
