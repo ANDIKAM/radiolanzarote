@@ -18,37 +18,13 @@ div.player.player-play{
 div.player.player-pause{
 }
 @media (max-width: 479px) and (orientation:portrait) {
-    .cabecera{
-        height: 50px;
-        background-color: #1D636A;
-        width: 100%;
-    }
-    .cabecera:after{
-        content:"(max-width: 479px) and (orientation:portrait)";
-    }
 }
 @media (max-width: 479px) and (orientation:landscape) {
-    .cabecera{
-        height: 50px;
-        background-color: #1D636A;
-        width: 100%;
-    }
-    .cabecera:after{
-        content:"(max-width: 479px) and (orientation:landscape)";
-    }
 }
 @media (min-width: 480px) and (max-width: 767px) and (orientation:portrait)  {
-    .cabecera{
-        height: 50px;
-        background-color: #1D636A;
-        width: 100%;
-    }
-    .cabecera:after{
-        content:"(min-width: 480px) and (max-width: 767px) and (orientation:portrait)";
-    }
 }
 @media (min-width: 480px) and (max-width: 767px) and (orientation:landscape)  {
-    .cabecera{
+    cabecera{
         height: 50px;
         background-color: #1D636A;
         width: 100%;
@@ -89,33 +65,8 @@ div.player.player-pause{
     }
 }
 @media (min-width: 992px) and (max-width: 1199px) and (orientation:landscape)  {
-    .cabecera{
-        height: 80px;
-        background-color: #1D636A;
-        width: 100%;
-    }
-    .cabecera:after{
-        content:"(min-width: 992px) and (max-width: 1199px) and (orientation:landscape)";
-    }
 }
 @media (min-width: 1200px) and (orientation:portrait) {
-    .cabecera{
-        height: 80px;
-        background-color: #1D636A;
-        width: 100%;
-    }
-    .cabecera:after{
-        content:"(min-width: 1200px) and (orientation:portrait)";
-    }
-    
 }
 @media (min-width: 1200px) and (orientation:landscape) {
-    .cabecera{
-        height: 80px;
-        background-color: #1D636A;
-        width: 100%;
-    }
-    .cabecera:after{
-        content:"(min-width: 1200px) and (orientation:landscape)";
-    }
 }

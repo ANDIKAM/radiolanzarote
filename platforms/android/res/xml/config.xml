@@ -35,7 +35,7 @@
     <splash density="port-xhdpi" src="res/screen/android/splash-port-xhdpi.png" />
     <splash density="port-xxhdpi" src="res/screen/android/splash-port-xxhdpi.png" />
     <allow-intent href="market:*" />
-    <name>RadioLanzarote</name>
+    <name>Radio Lanzarote</name>
     <description>
         Aplicación de Radio Lanzarote - El latido de tu isla
     </description>
