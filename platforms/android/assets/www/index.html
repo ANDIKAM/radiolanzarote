@@ -41,9 +41,21 @@
     </head>
     <body>
         <div class="container-fluid" style="height: 100%;">
-            <div class="cabecera"></div>
-            <div class="player player-play"></div>
-            <div class="news"></div>
+            <div class="row">
+                <div class="cabecera">
+                    <img class="logo" src="img/logo.png"/>
+                    <div class="titulo">
+                        <div class="principal blanco">Radio Lanzarote</div><div class="secundario amarillo">&nbsp;&nbsp;90.7fm</div>
+                        <div class="terceario blanco" style="padding-top:0px">El Latido de tu isla</div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div id="jquery_jplayer_1" class="player jp-play"></div>
+                    <div class="info blanco" style="display: none">Almacenando en buffer...</div>
+                    <div class="news"></div>
+                </div>
+            </div>
+            
             <!--
             <h1>Apache Cordova</h1>
             <div id="deviceready" class="blink">

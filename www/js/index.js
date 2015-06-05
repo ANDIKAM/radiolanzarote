@@ -47,3 +47,47 @@ var app = {
 };
 
 app.initialize();
+
+$(document).ready(function() {
+    var stream = {
+                title: "Radio Lanzarote",
+                mp3: "http://server1.emitironline.com:11299/radio.mp3"
+            },ready = false;
+    var	my_jPlayer = $("#jquery_jplayer_1");
+    my_jPlayer.jPlayer({
+        ready: function () {
+                //$("#jp_container .track-default").click();
+        },
+        timeupdate: function(event) {
+                //my_extraPlayInfo.text(parseInt(event.jPlayer.status.currentPercentAbsolute, 10) + "%");
+        },
+        play: function(event) {
+                //my_playState.text(opt_text_playing);
+        },
+        waiting: function(event){
+            jQuery(".info").css("display","block");
+        },
+        playing: function (event){
+            jQuery(".info").css("display","none");
+        },
+        pause: function(event) {
+                my_jPlayer.jPlayer("clearMedia");
+        },
+        ended: function(event) {
+                
+        },
+        swfPath: "../../dist/jplayer",
+        cssSelectorAncestor: "#jp_container",
+        supplied: "mp3",
+        wmode: "window"
+    });
+        jQuery(".player").click(function(){
+            my_jPlayer.toggleClass("jp-play");
+            my_jPlayer.toggleClass("jp-pause");
+            if(my_jPlayer.hasClass("jp-play")){
+                my_jPlayer.jPlayer("pause");
+            }else{
+                my_jPlayer.jPlayer("setMedia", stream).jPlayer("play");
+            }
+        });
+    });
